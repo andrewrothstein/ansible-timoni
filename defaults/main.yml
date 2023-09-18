@@ -1,0 +1,25 @@
+---
+# defaults file for timoni
+timoni_ver: 0.13.1
+
+timoni_arch_map:
+  aarch64: arm64
+  arm64: arm64
+  x86_64: amd64
+
+timoni_parent_install_dir: /usr/local
+
+timoni_mirror: https://github.com/stefanprodan/timoni/releases/download
+timoni_checksums:
+  # https://github.com/stefanprodan/timoni/releases/download/v0.13.1/timoni_0.13.1_checksums.txt
+  '0.13.1':
+    # https://github.com/stefanprodan/timoni/releases/download/v0.13.1/timoni_0.13.1_darwin_amd64.tar.gz
+    darwin_amd64: sha256:c85997ec3e25680e1575a6b5b2d70df734c226b43352eabdfe9340d73f6d5974
+    # https://github.com/stefanprodan/timoni/releases/download/v0.13.1/timoni_0.13.1_darwin_arm64.tar.gz
+    darwin_arm64: sha256:adc3b7ed398bd8ad06d1693d63a5be47dd151955a3fdf4ae4600a817b8a1318c
+    # https://github.com/stefanprodan/timoni/releases/download/v0.13.1/timoni_0.13.1_linux_amd64.tar.gz
+    linux_amd64: sha256:d26773866b82b8704fabd1e827b9892b15f8322c623d4c98915486c9b184a89f
+    # https://github.com/stefanprodan/timoni/releases/download/v0.13.1/timoni_0.13.1_linux_arm64.tar.gz
+    linux_arm64: sha256:6f8a30a8d9a5ca1599682feffc68b5ec48529ea65d9a2899dfaa093865b6852e
+    # https://github.com/stefanprodan/timoni/releases/download/v0.13.1/timoni_0.13.1_windows_amd64.zip
+    windows_amd64: sha256:618d5efb35c62afbd7319a09083d2d534ab125d1c66a7f25779947238bf17153

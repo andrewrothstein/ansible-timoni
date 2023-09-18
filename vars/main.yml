@@ -1,0 +1,13 @@
+---
+# vars file for timoni
+timoni_os: '{{ ansible_system | lower }}'
+timoni_arch: '{{ timoni_arch_map[ansible_architecture] }}'
+timoni_platform: '{{ timoni_os }}_{{ timoni_arch }}'
+timoni_checksum: '{{ timoni_checksums[timoni_ver][timoni_platform] }}'
+timoni_name: timoni_{{ timoni_ver }}_{{ timoni_platform }}
+timoni_archive: '{{ timoni_name }}.{{ timoni_archive_type | default("tar.gz") }}'
+timoni_tmp_archive: '{{ timoni_tmp_dir | default("/tmp") }}/{{ timoni_archive }}'
+timoni_url: '{{ timoni_mirror }}/v{{ timoni_ver }}/{{ timoni_archive }}'
+timoni_install_dir: '{{ timoni_parent_install_dir }}/{{ timoni_name }}'
+timoni_install_exe: '{{ timoni_install_dir }}/timoni'
+timoni_link: '{{ timoni_parent_install_dir }}/bin/timoni'
