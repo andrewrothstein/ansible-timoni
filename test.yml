@@ -1,5 +1,5 @@
 ---
-- name: testing andrewrothstein.timoni
+- name: Testing andrewrothstein.timoni
   hosts: all
   roles:
     - role: '{{ playbook_dir }}'
